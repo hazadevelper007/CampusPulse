@@ -1,0 +1,35 @@
+.page-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:18px;
+  flex-wrap:wrap
+}
+.detail dt{
+  color:var(--mut);
+  font-size:13px
+}
+.detail dd{
+  margin:0 0 10px
+}
+.err-page{
+  text-align:center
+}
+.err-page h1{
+  font-size:4rem;
+  margin:0
+}
+
+.grace{
+  color:var(--warn);
+  font-weight:600;
+  font-variant-numeric:tabular-nums
+}
+.legend{
+  font-size:13px;
+  line-height:1.6
+}
+.legend .badge{
+  margin-right:6px
+}

@@ -1,0 +1,35 @@
+@media(max-width:1000px){
+  .g4,.g3{
+    grid-template-columns:repeat(2,1fr)
+  }
+
+}
+
+@media(max-width:760px){
+  .sidebar{
+    transform:translateX(-100%);
+    width:var(--side)!important
+  }
+  .mobile-open .sidebar{
+    transform:none
+  }
+  .main,.collapsed .main{
+    margin-left:0
+  }
+  .g4,.g3,.g2{
+    grid-template-columns:1fr
+  }
+  .content{
+    padding:16px
+  }
+  .collapsed .nav span{
+    display:inline
+  }
+  .bar{
+    grid-template-columns:120px 1fr 40px
+  }
+  .auth{
+    background:var(--navy)
+  }
+
+}

@@ -1,0 +1,46 @@
+*{
+  box-sizing:border-box
+}
+body{
+  margin:0;
+  font:15px/1.5 var(--font);
+  color:var(--ink);
+  background:var(--bg)
+}
+
+h1{
+  font-size:1.55rem;
+  margin:0 0 .25rem;
+  color:var(--navy)
+}
+h2{
+  font-size:1.05rem;
+  margin:0 0 .75rem;
+  color:var(--navy)
+}
+p{
+  margin:.25rem 0
+}
+a{
+  color:var(--teal);
+  text-decoration:none
+}
+a:hover{
+  text-decoration:underline
+}
+
+:focus-visible{
+  outline:3px solid #7fd6ce;
+  outline-offset:2px
+}
+.muted{
+  color:var(--mut)
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{
+    transition:none!important;
+    animation:none!important
+  }
+
+}

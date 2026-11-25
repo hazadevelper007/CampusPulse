@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Welcome to CampusPulse</title>
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <style>
+    *{box-sizing:border-box;margin:0}
+    html,body{height:100%}
+    body{
+      font-family:var(--font);color:#fff;min-height:100vh;display:flex;flex-direction:column;
+      background:
+        radial-gradient(ellipse 60% 40% at 22% 18%,rgba(255,255,255,.16),transparent 70%),
+        radial-gradient(ellipse 50% 35% at 70% 12%,rgba(255,255,255,.12),transparent 70%),
+        radial-gradient(ellipse 45% 30% at 88% 38%,rgba(255,255,255,.08),transparent 70%),
+        linear-gradient(180deg,#1b5fa8 0%,#173B67 45%,#0f2a4a 100%);
+      position:relative;overflow:hidden
+    }
+    /* soft campus skyline along the bottom */
+    body::after{
+      content:"";position:absolute;left:0;right:0;bottom:0;height:34%;pointer-events:none;
+      background:
+        linear-gradient(180deg,transparent,rgba(8,22,40,.85)),
+        repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 38px,transparent 38px 90px);
+      clip-path:polygon(0 55%,8% 55%,8% 30%,18% 30%,18% 48%,30% 48%,30% 22%,34% 14%,38% 22%,38% 48%,52% 48%,52% 34%,66% 34%,66% 50%,78% 50%,78% 26%,90% 26%,90% 46%,100% 46%,100% 100%,0 100%)
+    }
+    header{padding:18px 6vw;position:relative;z-index:1}
+    header .logo{display:inline-flex;background:#fff;border-radius:12px;padding:4px 12px;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+    header img{height:48px;display:block}
+    main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 6vw 12vh;position:relative;z-index:1;max-width:900px}
+    .pill{
+      align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-size:13px;
+      background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 14px;border-radius:999px;margin-bottom:22px
+    }
+    .pill i{width:7px;height:7px;border-radius:50%;background:#2fe0b5;display:inline-block}
+    h1{font-size:clamp(40px,7.5vw,76px);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+    h1 span{display:block;background:linear-gradient(90deg,#19d3a2,#3be8c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+    p.sub{margin-top:20px;max-width:560px;font-size:clamp(15px,2vw,19px);line-height:1.6;color:rgba(255,255,255,.88)}
+    .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+    .cta a{
+      text-decoration:none;font-weight:600;font-size:16px;padding:14px 30px;border-radius:999px;
+      display:inline-flex;align-items:center;gap:10px;transition:transform .15s,background .15s
+    }
+    .cta a:hover{transform:translateY(-2px)}
+    .cta .primary{background:#1769ff;color:#fff;box-shadow:0 8px 22px rgba(23,105,255,.4)}
+    .cta .primary:hover{background:#2c78ff}
+    .cta .ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;background:rgba(255,255,255,.08)}
+    .cta .ghost:hover{background:rgba(255,255,255,.18)}
+  </style>
+</head>
+<body>
+  <header><span class="logo"><img src="assets/logo.jpg" alt="CampusPulse"></span></header>
+  <main>
+    <span class="pill"><i></i>Lab Booking &bull; Lost &amp; Found</span>
+    <h1>Welcome to <span>CampusPulse</span></h1>
+    <p class="sub">Smarter campus laboratories &mdash; book lab resources, verify attendance and recover lost items with one simple system for Students, Lab Assistants and Administrators.</p>
+    <div class="cta">
+      <a class="primary" href="sign-in.html">Sign in &rarr;</a>
+      <a class="ghost" href="register.html">Register</a>
+    </div>
+  </main>
+</body>
+</html>
